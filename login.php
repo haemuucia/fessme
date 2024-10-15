@@ -11,6 +11,9 @@ if(isset($_POST['login'])){
     } else if(empty($password)) {
         echo "<script>alert('Password is required');</script>";
     } else {
+        $stmt = $con->prepare("SELECT * FROM tb_user WHERE email = ?");
+        $stmt->bind_param("s", $email); // "s" indicates the type is a string
+        $stmt->execute();
         $hasil = mysqli_query($con, "SELECT * FROM tb_user WHERE email = '$email'");
         $data = mysqli_fetch_assoc($hasil);
         $cek = mysqli_num_rows($hasil);
