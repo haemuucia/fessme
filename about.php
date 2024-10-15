@@ -68,4 +68,20 @@
     <br/>
     <br/>
     <div>Join us on Fessme, where your story matters, your voice resonates, and a global community stands ready to embrace your journey.</div>
+     <div style="text-align: center; margin-top: 20px;">
+            <a href="contact2.php" class="contact-btn">Contact Us</a>
+        </div>
 </section>
+<script>
+        // JavaScript to dynamically display a different quote every day
+        const quotes = [
+            "Embrace the journey, and let your voice be the guide.",
+            "Your story is powerful—share it bravely.",
+            "Community is built one story at a time.",
+            "In sharing our struggles, we find strength.",
+            "Your words matter, your story matters."
+        ];
+        const quoteElement = document.getElementById('dailyQuote');
+        const randomIndex = new Date().getDate() % quotes.length;
+        quoteElement.textContent = quotes[randomIndex];
+    </script>
