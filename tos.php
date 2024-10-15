@@ -40,7 +40,7 @@
 </head>
 <body>
     <h1>Terms of Service for [FESSME]</h1>
-    <p>Last Updated: [20 December 2023]</p>
+    <p>Last Updated: [15 October 2024]</p>
     <p>These Terms of Service ("Terms") govern your use of the [FESSME] website and any related services provided by [ME TECH] (the "Service").</p>
     <p>By accessing or using the Service, you agree to be bound by these Terms.</p>
     <ul>
@@ -85,7 +85,19 @@ Please review our Privacy Policy to understand our practices regarding the colle
 <p><b>6. Changes to Terms</b></p>
 <p>6.1 Modification:</p>
 <p>We reserve the right to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice before any new terms taking effect.</p>
-<p><b>7. Contact Us</b></p>
-<p>If you have any questions about these Terms, please contact us at [metech.company23@gmail.com].</p>
-</ul>
+        <p><b>7. Limitation of Liability</b></p>
+        <p>7.1 No Liability:</p>
+        <p>To the fullest extent permitted by law, [ME TECH] shall not be liable for any damages or losses resulting from your use of the Service, including but not limited to indirect, incidental, special, consequential, or punitive damages.</p>
+        <p>7.2 Service Availability:</p>
+        <p>We do not guarantee that the Service will be available at all times or without interruption, and we are not liable for any unavailability or technical issues.</p>
+
+        <p><b>8. Governing Law</b></p>
+        <p>8.1 Jurisdiction:</p>
+        <p>These Terms shall be governed by and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law provisions.</p>
+        <p>8.2 Dispute Resolution:</p>
+        <p>Any disputes arising out of or related to these Terms shall be resolved through arbitration in [Your City/State] in accordance with the applicable rules of arbitration.</p>
+
+        <p><b>9. Contact Us</b></p>
+        <p>If you have any questions about these Terms, please contact us at [metech.company23@gmail.com].</p>
+
 </body>
