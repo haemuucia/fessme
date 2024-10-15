@@ -56,13 +56,28 @@
     </div>
   </div>
    <script>
-        // jQuery code to trigger an alert when "Save changes" button is clicked
+
         $(document).ready(function() {
+            // Event listener for Save changes button click
             $('.btn-primary').click(function() {
-                alert('We will direct you to payment session! (Feature Currently Not Ready)');
-                window.location.href = 'test.html';
+                const nameInput = $('#email').val();
+                if (!nameInput) {
+                    alert('Please enter your name.');
+                } else {
+                    if (confirm('We will direct you to the payment session. Proceed?')) {
+                        window.location.href = 'test.html';
+                    }
+                }
+            });
+
+            // Event listener for payment selection
+            $('#payment').change(function() {
+                const selectedPayment = $(this).val();
+                let message = `You have selected ${selectedPayment} as your payment method.`;
+                $('#paymentMessage').text(message);
             });
         });
+       
         // Event listener for payment selection
         $('#payment').change(function() {
                 var selectedPayment = $(this).val();
