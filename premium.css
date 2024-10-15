@@ -70,8 +70,11 @@ a {
   height: 360px;
   object-fit: cover;
   object-position: 50% 20%;
+  transition: transform 0.3s ease-in-out;
 }
-
+.box-image:hover {
+  transform: scale(1.05);
+}
 .title-flex {
   display: flex;
   justify-content: space-between;
