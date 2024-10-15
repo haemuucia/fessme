@@ -6,13 +6,8 @@
 }
 
 :root {
-  --purple: hsl(240, 80%, 89%);
-  --pink: hsl(0, 59%, 94%);
-  --light-bg: hsl(204, 37%, 92%);
-  --light-gray-bg: hsl(0, 0%, 94%);
-  --white: hsl(0, 0%, 100%);
-  --dark: hsl(0, 0%, 7%);
-  --text-gray: hsl(0, 0%, 30%);
+  --light-blue: #CCDDFA;
+  --light-gray: lightgray;
 }
 
 body {
@@ -50,7 +45,7 @@ a {
   gap: 24px;
   padding: 24px;
   flex-wrap: wrap;
-  background-color: #CCDDFA;
+  background-color: var(--light-blue);
 }
 
 .box {
@@ -104,7 +99,7 @@ a {
   font-size: 20px;
   letter-spacing: 2px;
   background: transparent;
-  box-shadow: 0px 0px 0px 1px lightgray inset;
+  box-shadow: 0px 0px 0px 1px var(--light-gray) inset;
   transition: background 0.4s ease;
 }
 
