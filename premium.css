@@ -109,7 +109,7 @@ a {
 }
 
 .button:hover {
-  background-color: #CCDDFA;
+  background: linear-gradient(135deg, #CCDDFA, #A1B8E0);
 }
 
 .fill-one {
