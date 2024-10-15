@@ -111,7 +111,7 @@
     <br>
        <p>9. Age Restriction:
         <ul>
-            <li>Users must be of a certain age (define the appropriate age) to use the platform.</li>
+            <li>Users must be at least 18 years old to use this website.</li>
             <li>If minors are allowed, additional measures to protect their privacy should be implemented.</li>
         </ul>
     </p>
