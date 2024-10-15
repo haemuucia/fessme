@@ -26,7 +26,7 @@
         justify-content: center;
         align-items: center;
         padding: 10px 10%;
-        background-color: #7E94BF;
+        background: linear-gradient(90deg, #7E94BF, #A7BADD);
         box-sizing: border-box;
         width: 100%;
     }
