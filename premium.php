@@ -25,7 +25,7 @@
         <img class="box-image" src="MONTHLY.png" alt="Monthly Purchase">
         <div class="title-flex">
           <h3 class="box-title">Monthly Purchase</h3>
-          <p class="price">IDR. 15.000,00</p>
+          <p class="price">IDR. 10.000,00</p>
         </div>
         <p class="description">Unlock premium features with a monthly subscription, including the ability to post and comment at your convenience, anytime.</p>
       </div>
@@ -36,7 +36,7 @@
         <img class="box-image" src="once.png" alt="One Time Purchase">
         <div class="title-flex">
           <h3 class="box-title">One Time Purchase!</h3>
-          <p class="price">Rp. 250.000,00</p>
+          <p class="price">Rp. 200.000,00</p>
         </div>
         <p class="description">Purchase once and enjoy unlimited premium access. including the ability to post and comment at your convenience, anytime.</p>
       </div>
@@ -57,7 +57,7 @@
        <form class="PURCHASE">
           <label for="email"> Name : </label>
           <input type="text" id="email" name="email" class="input" placeholder=" name ">
-          <p id="BA">Please write your name same as your Payment Account</p>
+          <p id="BA">Please write your full name same as your Payment Account</p>
           
           <label for="payment">Please choose a Payment : </label>
           <select name="payment" id="payment">
@@ -66,6 +66,7 @@
               <option value="OVO">OVO</option>
               <option value="ShopeePay">ShopeePay</option>
               <option value="mandiri">Mandiri</option>
+              <option value="creditcard">Credit Card</option>
             </select>
           <br>
        </form>
@@ -115,6 +116,9 @@
                 }
                 if (selectedPayment === 'mandiri') {
                     alert('Mandiri payment method selected!');
+                }
+                if (seletedPayment === 'creditcard') {
+                    alert('Credit Card payment method selected!');
                 }
             });
 </script>
