@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+*{
+}
+
+.formact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #CCDDFA;
+    background-image: url(bgbody.png);
+    text-align: center;
+    background-size: 100% 100%;
+}
+form{
+    border-radius: 100px;
+}
+#freeform{
+  background-color: #A7BADD; 
+  width: 800px; 
+  height: 350px; 
+  opacity: 0.50; 
+  border-radius: 100px;
+  vertical-align: middle;
+  line-height: 8em;
+  margin-top: 33%;
+  margin-bottom: -20%;    
+  text-align: center;
+}
+textarea{
+    resize: none;
+    width: 1000px;
+    height: 400px;
+}
+.carousel-control-next-icon{
+    background-color: transparent;
+}
+.carousel-control-prev-icon{
+    background-color: transparent;
+    color: #435585;
+}
+
+.carousel-control-prev{
+    color: transparent;
+}
+
+/* button */
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10%;
+}
+
+
+.btnsubmit {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #1e1e5d;
+  background: #CCDDFA;
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #889BBF;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  }
+
+.btnsubmit::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #A7BADD;
+  box-shadow: 0 0 60px #889BBF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.btnsubmit:hover::before, .btnsubmit:focus::before {
+  opacity: 1;
+}
+
+.btnsubmit::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #CCDDFA;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+  opacity: 1;
+}
+
+.btnsubmit:hover::after, .btnsubmit:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+
+/* Center the carousel captions */
+.carousel-caption {
+    font-size: 30px;
+    position: absolute;
+    top: 50%; /* Move the caption down by 50% from the top */
+    transform: translate(-14%, -25%); /* Translate the caption back up and left by 50% */
+    text-align: center; /* Center-align the text */
+    width: 100%; /* Make the caption full-width */
+}
+
+
+/* footer */
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #889BBF;
+  min-height: 100px;
+  padding: 20px 50px;
+  margin-top: -55px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.social-icon, .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wav3.png);
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
