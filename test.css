@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: url(bglogin2.png);
+  background-color: #EFEFFF;
+  background-size: 100% 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 60px;
+  margin-left: 90px;
+  font-size: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email, #password {
+  background-color: #7F7CC5;
+  margin-left: 70px;
+  width: 500px;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 20px;
+  border-color: white;
+  color: black !important;
+}
+
+#forgot{
+  margin-left: 350px;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+.floatright {
+  margin-right: 120px;
+  text-align: center;
+  padding: 45px;
+  background-image: 
+  linear-gradient(to right, #A7BADD, #A7BADD), /* Right side gradient */
+  linear-gradient(to left, #A7BADD, #A7BADD), /* Left side gradient */
+  linear-gradient(to top, #A7BADD, #A7BADD), /* Top side gradient */
+  linear-gradient(to bottom, #A7BADD, #A7BADD); /* Bottom side gradient */
+  background-size: 10px 100%, 10px 100%, 100% 10px, 100% 10px; 
+  background-position: right 0 top 0, left 0 top 0, top 0 left 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  position: relative; 
+  top: -10px; 
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+#text1 {
+  font-size: 32px;
+  margin-top: 90px;
+  margin-bottom: 0;
+
+}
+
+.btn{
+  margin-top: 130px;
+  margin-right: 100px;
+}
+
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin-left: 120px;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn24 {
+  background-image: linear-gradient(
+      to right,
+      #6253e1,
+      #852d91,
+      #a3a1ff,
+      #f24645
+    );
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
