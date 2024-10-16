@@ -79,7 +79,8 @@
             "Your story is powerful—share it bravely.",
             "Community is built one story at a time.",
             "In sharing our struggles, we find strength.",
-            "Your words matter, your story matters."
+            "Your words matter, your story matters.",
+            "In the tapestry of life, every story adds a unique thread; together, we weave a masterpiece of understanding and connection."
         ];
         const quoteElement = document.getElementById('dailyQuote');
         const randomIndex = new Date().getDate() % quotes.length;
