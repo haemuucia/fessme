@@ -1,6 +1,6 @@
 Fessme Website
 
-Fessme, established in 2023 by Evanka Fauzya Sheiradina, Intan Kumala Pasya, Nabila Aura Salsa Yuniar, Nasywa Kamila, and Veronica Irene Tanumihadja, is an innovative platform that allows users to send anonymous messages, commonly known as "menfess" (mention confess). This website is designed to facilitate honest and open communication without revealing the sender's identity.
+Fessme, established in 2023 by Evanka Fauzya Sheiradina, Nabila Aura Salsa Yuniar, George Elver Andrew Tamba, and Veronica Irene Tanumihadja, is an innovative platform that allows users to send anonymous messages, commonly known as "menfess" (mention confess). This website is designed to facilitate honest and open communication without revealing the sender's identity.
  Key features  of Fessme include:
  1. Anonymity: Users can send menfess without the fear of their identity being disclosed, allowing for honest and open conversations.
  2. Ease to Use: The platform has a simple and intuitive interface, making it easy for anyone to send a menfess in just a few seconds.
