@@ -30,6 +30,14 @@
     
             <button type="button" id="submit-btn">Submit</button>
         </form>
+        <div class="social-links">
+    <p>Follow us on Instagram:</p>
+    <a href="https://instagram.com/your_instagram_handle" target="_blank">
+        <img src="#" alt="Instagram" style="width: 24px; height: 24px;">
+        @fessme_official
+    </a>
+</div>
+
     </div>
 </body>
 </html>
