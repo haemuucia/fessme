@@ -100,5 +100,9 @@ footer {
         <ul>
             <p> You can reach out to the platform's support team through the designated contact channels provided on the website or app.</p>
         </ul>
+    <h2><b>14. Is there a limit on the number of messages I can post?</b></h2>
+<ul>
+    <p>While there may not be a strict limit, the platform encourages quality over quantity to maintain a respectful and manageable environment.</p>
+</ul>
         </body>
         </html>

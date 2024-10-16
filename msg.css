@@ -1,6 +1,6 @@
 
   .container {
-          border: 2px solid #dedede;
+          border: 3px solid #dedede;
           background-color: #f1f1f1;
           border-radius: 15px;
           padding: 10px;
@@ -44,15 +44,15 @@
   }
   
   .container h3 {
-      color: black;
+      color: white;
       font-size: 18px; 
       margin-bottom: 5px; 
       font-family: "Poetsen One", sans-serif;
-      border-bottom: 2px solid #ccc; 
+      border-bottom: 3px solid #ccc; 
   }
   
   .container p {
-      color: black; 
+      color: yellow; 
       font-size: 13px; 
       font-family: "Poetsen One", sans-serif;
   }
