@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toko Pak Edi</title>
-    <!-- CSS start -->
     <style>
         form {
             display: inline-block;
@@ -15,8 +14,6 @@
             visibility: hidden;
         }
     </style>
-    <!-- CSS end -->
-    <!-- JS start -->
     <script>
         let counter = 0;
         function confirm(){
@@ -28,31 +25,26 @@
             let blocked = document.getElementById("blocked")
             let master = "07082020"
             
-            //if the input PIN matches the master PIN
             if (pin == master) {
                 pin2.style.borderColor = "green"; 
                 correct.style.visibility = "visible"
             }
 
-            //if the input PIN is empty
             if (pin == "") {
                 pin2.style.borderColor = "red"; 
                 alert("You must enter PIN")
             }
 
-            //if the input PIN is not a number
             else if (isNaN(pin))  {
                 pin2.style.borderColor = "red"; 
                 alert("Pin must be number!")
             }
 
-            //if the input PIN is less than 8 numbers / greater than 8 numbers
             else if (pin.length < 8 || pin.length > 8) {
                 pin2.style.borderColor = "red"; 
                 alert("PIN must be 8 digits")
             }
 
-            //if the input PIN does not match the master PIN
             else if (pin != master) {
                 pin2.style.borderColor = "red"; 
                 alert("Wrong PIN")
@@ -61,7 +53,6 @@
                 document.getElementById("mistake").innerHTML = counter
             }
 
-            //if the user input the PIN more than 3 times
             if (counter>3) {
                 let button = document.getElementById("button")
                 let mistake = document.getElementById("mistake")
@@ -74,7 +65,6 @@
             return false;
         }
     </script>
-    <!-- JS end -->
 </head>
 
 <body>
