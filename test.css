@@ -53,10 +53,10 @@ input::placeholder {
   text-align: center;
   padding: 45px;
   background-image: 
-  linear-gradient(to right, #A7BADD, #A7BADD), /* Right side gradient */
-  linear-gradient(to left, #A7BADD, #A7BADD), /* Left side gradient */
-  linear-gradient(to top, #A7BADD, #A7BADD), /* Top side gradient */
-  linear-gradient(to bottom, #A7BADD, #A7BADD); /* Bottom side gradient */
+  linear-gradient(to right, #A7BADD, #A7BADD), 
+  linear-gradient(to left, #A7BADD, #A7BADD), 
+  linear-gradient(to top, #A7BADD, #A7BADD), 
+  linear-gradient(to bottom, #A7BADD, #A7BADD); 
   background-size: 10px 100%, 10px 100%, 100% 10px, 100% 10px; 
   background-position: right 0 top 0, left 0 top 0, top 0 left 0, bottom 0 left 0;
   background-repeat: no-repeat;
