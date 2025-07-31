@@ -45,8 +45,6 @@ textarea{
     color: transparent;
 }
 
-/* button */
-
 .wrap {
   height: 100%;
   display: flex;
@@ -126,19 +124,14 @@ textarea{
   }
 }
 
-
-/* Center the carousel captions */
 .carousel-caption {
     font-size: 30px;
     position: absolute;
-    top: 50%; /* Move the caption down by 50% from the top */
-    transform: translate(-14%, -25%); /* Translate the caption back up and left by 50% */
-    text-align: center; /* Center-align the text */
-    width: 100%; /* Make the caption full-width */
+    top: 50%;
+    transform: translate(-14%, -25%); 
+    text-align: center; 
+    width: 100%; 
 }
-
-
-/* footer */
 
 .footer {
   position: relative;
@@ -152,7 +145,6 @@ textarea{
   align-items: center;
   flex-direction: column;
 }
-
 
 .social-icon, .menu {
   position: relative;
