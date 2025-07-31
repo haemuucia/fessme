@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
-    <!-- Add jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI/tZ1a9l3/8zIUVNow7qFqd6BeRUUxFq5P1kFII=" crossorigin="anonymous"></script>
     <style>
         body {
@@ -66,7 +65,6 @@
 <script>
     $(document).ready(function () {
         $("#submit-btn").on("click", function () {
-            // Simulate sending a password reset email (replace this with your actual logic)
             var email = $("#email").val();
             if (email) {
                 $(".message").show();
@@ -82,7 +80,6 @@
                 url: "/your-server-reset-endpoint",
                 data: { email: email },
                 success: function(response) {
-                // Handle the server response here
                 console.log(response);
                 },
                 error: function(error) {
