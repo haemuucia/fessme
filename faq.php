@@ -31,10 +31,10 @@ li {
 section {
     padding: 20px;
     text-align: center;
-    background-color: #fff; /* White background for the text */
-    border-radius: 10px; /* Rounded corners for sections */
-    margin-bottom: 20px; /* Add some space between sections */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #fff; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
 footer {
