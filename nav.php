@@ -1,14 +1,11 @@
         <?php
         session_start();
             require 'connection.php';
-            // Periksa apakah sesi login ada
             if(!isset($_SESSION['login'])) {
-                // Jika tidak ada, arahkan kembali ke halaman login atau halaman lain yang sesuai
-                header("Location: login.php"); // Ganti login.php dengan halaman login Anda
-                exit(); // Pastikan kode setelah header() tidak dijalankan
+                header("Location: login.php"); 
+                exit(); 
             }
 
-            // Jika sesi login ada, ambil informasi pengguna
             $session = $_SESSION['login'];
             $query = mysqli_query($con, "SELECT * FROM tb_user WHERE email = '$session'");
             $nama = mysqli_fetch_assoc($query)['first_name'];
