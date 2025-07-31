@@ -16,12 +16,10 @@
       </script>
 </head>
 <body>
- <!-- Button trigger modal -->
 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter">
     Launch demo modal
   </button>
   
-  <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -58,7 +56,6 @@
    <script>
 
         $(document).ready(function() {
-            // Event listener for Save changes button click
             $('.btn-primary').click(function() {
                 const nameInput = $('#email').val();
                 if (!nameInput) {
@@ -70,7 +67,6 @@
                 }
             });
 
-            // Event listener for payment selection
             $('#payment').change(function() {
                 const selectedPayment = $(this).val();
                 let message = `You have selected ${selectedPayment} as your payment method.`;
@@ -78,7 +74,6 @@
             });
         });
        
-        // Event listener for payment selection
         $('#payment').change(function() {
                 var selectedPayment = $(this).val();
                 if (selectedPayment === 'BCA') {
