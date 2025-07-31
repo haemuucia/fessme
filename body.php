@@ -2,14 +2,11 @@
 session_start();
 require 'connection.php';
 
-// Check if session 'login' is set
 if(!isset($_SESSION['login'])) {
-    // If not, redirect to login page
     header("Location: login.php");
     exit();
 }
 
-// Get user ID from session
 $session = $_SESSION['login'];
 $perintah = mysqli_query($con, "SELECT * FROM tb_user WHERE email = '$session'");
 $pengguna = mysqli_fetch_assoc($perintah)['user_id'];
@@ -26,14 +23,12 @@ if(isset($_POST['submit'])){
 
   $hasil = mysqli_query($con,"INSERT INTO tb_massage(id_user, massage) VALUES ('$code_user','$fr')");
   if ($hasil) {
- // Insertion successful, provide feedback and possibly redirect
  echo "<script>
  alert('Message has been sent anonymously! Check the message page to see');
  document.location.href = 'body.php';
  </script>";
- exit; // Add exit to prevent further execution
+ exit; 
   } else {
-      // Handle insertion failure
       echo "<script>
       alert('Gagal');
       </script>";
@@ -53,7 +48,6 @@ if(isset($_POST['submit'])){
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
-<!-- Carousel Bootstrap -->
 <?php include 'nav.php' ?>
   <div id="carouselExample" class="carousel slide" style="box-shadow: 0 15px 4px rgba(0, 0, 0, 0.50);">
     <div class="carousel-inner">
@@ -82,9 +76,7 @@ if(isset($_POST['submit'])){
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-<!-- Carousel Bootstrap end here -->
 
-<!-- submit form  -->
 <div class="formact">
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <br>
@@ -97,9 +89,7 @@ if(isset($_POST['submit'])){
         </div>
     </form> 
 </div>
-<!-- submit form end here  -->
 <br> <br> <br> <br> <br>
-<!-- FOOTER TEMPLATE -->
 <footer>
   <footer class="footer">
     <div class="waves">
