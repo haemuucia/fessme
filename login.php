@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'connection.php'; // Assuming this file contains the database connection code
+include 'connection.php'; 
 
 if(isset($_POST['login'])){
     $email = $_POST['email'];
@@ -12,7 +12,7 @@ if(isset($_POST['login'])){
         echo "<script>alert('Password is required');</script>";
     } else {
         $stmt = $con->prepare("SELECT * FROM tb_user WHERE email = ?");
-        $stmt->bind_param("s", $email); // "s" indicates the type is a string
+        $stmt->bind_param("s", $email); 
         $stmt->execute();
         $hasil = mysqli_query($con, "SELECT * FROM tb_user WHERE email = '$email'");
         $data = mysqli_fetch_assoc($hasil);
